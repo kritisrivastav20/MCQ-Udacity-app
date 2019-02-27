@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.mcqquiz.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Question 1. -->
+            <TextView
+                style="@style/questionStyle"
+                android:background="#FF9800"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/question1"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <RadioGroup
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_Fungi"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="1. Fungi" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_Bacteria"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="2. Bacteria" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_Algae"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="3. Algae" />
+
+                <RadioButton
+                    android:id="@+id/lichens_correct"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="4. Lichens" />
+
+            </RadioGroup>
+
+            <!-- Question 2. -->
+            <TextView
+                style="@style/questionStyle"
+                android:background="#F57C00"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/question2"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <RadioGroup
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_Apopl"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="1. Apoplastic" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_sympl"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="2. Symplastic" />
+
+                <RadioButton
+                    android:id="@+id/anb_correct"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="3. Both 1 and 2" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_none"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="4. None of the above" />
+
+            </RadioGroup>
+
+            <!-- Question 3. -->
+            <TextView
+                style="@style/questionStyle"
+                android:background="#FF9800"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/question3"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <RadioGroup
+                android:id="@+id/question3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_procurd"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="1. Probiotic curd" />
+
+                <RadioButton
+                    android:id="@+id/biobricks_correct"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="2. Bio bricks" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_Green"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="3. Green cover" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_ministry"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="4. Green Ministry" />
+
+            </RadioGroup>
+
+            <!-- Question 4. -->
+
+            <TextView
+                style="@style/questionStyle"
+                android:background="#F57C00"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/question4"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <RadioGroup
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_burying"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="1. Burying" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_burning"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="2. Burning" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_dumping"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="3. Dumping" />
+
+                <RadioButton
+                    android:id="@+id/recycling_correct"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="4. Recycling" />
+
+            </RadioGroup>
+
+            <!-- Question 5. -->
+
+            <TextView
+                style="@style/questionStyle"
+                android:background="#FF9800"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/question5"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <RadioGroup
+                android:id="@+id/question5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_abiotic"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="1. Abiotic factors" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_biotic"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="2. Biotic factors" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_oxyni"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="3. Oxygen and Nitrogen" />
+
+                <RadioButton
+                    android:id="@+id/abnbio_correct"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="4. Abiotic and biotic factors" />
+
+            </RadioGroup>
+
+            <!-- Question 6. -->
+
+            <TextView
+                style="@style/questionStyle"
+                android:background="#F57C00"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/question6"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <RadioGroup
+                android:id="@+id/question6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_volcano"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="1. Mixture of gases from volcanoes" />
+
+                <RadioButton
+                    android:id="@+id/fermen_correct"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="2. Produced from fermentation of biomass" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_oilwell"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="3. Produced from crude oil wells" />
+
+                <RadioButton
+                    android:id="@+id/Radiobutton_combust"
+                    style="@style/Optionstyle"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="checkanswer"
+                    android:paddingLeft="16dp"
+                    android:text="4. Produced from incomplete combustion of biomass" />
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/questionStyle"
+                android:background="#F57C00"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/question7"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/cb_hold_correct"
+                style="@style/Optionstyle"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:onClick="checkoption"
+                android:paddingLeft="16dp"
+                android:text="1. Holdfast" />
+
+            <CheckBox
+                android:id="@+id/cb_primord_correct"
+                style="@style/Optionstyle"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:onClick="checkoption"
+                android:paddingLeft="16dp"
+                android:text="2. Primordial cell" />
+
+            <CheckBox
+                android:id="@+id/cb_germ"
+                style="@style/Optionstyle"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:onClick="checkoption"
+                android:paddingLeft="16dp"
+                android:text="3. Germ cell" />
+
+            <CheckBox
+                android:id="@+id/cb_tissue"
+                style="@style/Optionstyle"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:onClick="checkoption"
+                android:paddingLeft="16dp"
+                android:text="4. Tissue cell" />
+
+            <TextView
+                style="@style/questionStyle"
+                android:background="#F57C00"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/question8"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/et_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:onClick="RatingMethod"
+                android:padding="8dp"
+                android:inputType="text"
+                android:hint="algae and fungi together"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray" />
+    <!-- Submit button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@android:color/white">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#F57C00"
+            android:onClick="SubmitTest"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>
